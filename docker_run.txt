@@ -8,3 +8,4 @@ docker run -d \
   myjenkins:1
 
 
+i used mount method instead of docker:bind or tcp to host machine docker
