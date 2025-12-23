@@ -1,4 +1,4 @@
-FROM jenkins/agent:alpine-jdk11
+FROM jenkins/inbound-agent:alpine-jdk11
 USER root
-RUN apk add go
+RUN apk add --no-cache go
 USER jenkins
