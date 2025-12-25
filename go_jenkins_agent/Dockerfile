@@ -1,4 +1,4 @@
-FROM jenkins/inbound-agent:alpine-jdk11
+FROM jenkins/agent:jdk21
 USER root
-RUN apk add --no-cache go
+RUN apt-get update && apt-get install -y golang
 USER jenkins
